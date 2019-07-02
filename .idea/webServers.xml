@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="83d72b68-249d-4e45-84e7-343831e1911b" name="paypal" url="http://101.200.62.165">
+        <fileTransfer host="101.200.62.165" port="22" rootFolder="/data/wwwroot/default/paypal" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
