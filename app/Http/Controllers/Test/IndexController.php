@@ -40,15 +40,15 @@ class IndexController extends Controller
             'publicKey' => 'qzvr8qpy4nw3ysrb',
             'privateKey' => '3d11ae07c9872ceea7585543288a3cf5'
         ];
-//        $gateway=new \Braintree_Gateway($arr);
-//        var_dump($gateway);
+        $gateway=new \Braintree_Gateway($arr);
+        var_dump($gateway);exit;
         //生成客户端令
         \Braintree_Configuration::environment('sandbox');
         \Braintree_Configuration::merchantId('4wrxztzgxgcjvxc8');
         \Braintree_Configuration::publicKey('qzvr8qpy4nw3ysrb');
         \Braintree_Configuration::privateKey('3d11ae07c9872ceea7585543288a3cf5');
-        $aCustomerId='4wrxztzgxgcjvxc8';//商户id
-        $clientToken=\Braintree_ClientToken::generate(["customerId" => $aCustomerId]);
+//        $aCustomerId='4wrxztzgxgcjvxc8';//商户id
+//        $clientToken=\Braintree_ClientToken::generate(["customerId" => $aCustomerId]);
         $this->setError('200',$clientToken); //返回到客户端
         //接收用户付款授权信息
         //$nonceFromTheClient = $_POST["payment_method_nonce"];
