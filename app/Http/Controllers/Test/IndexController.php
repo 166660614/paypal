@@ -16,8 +16,7 @@ class IndexController extends Controller
         ];
         $gateway=new \Braintree_Gateway($config_braintree);
         //生成客户端令牌
-        var_dump($gateway->clientToken());exit;
-        $aCustomerId='';
+        $aCustomerId='4wrxztzgxgcjvxc8';
         $clientToken = $gateway->clientToken()->generate([
             "customerId" => $aCustomerId
         ]);
